@@ -1,0 +1,178 @@
+:root{
+    --my-primary : #171717;
+    --my-secondary: #444444;
+    --third-color : #DA0037;
+    --forth-color: #EDEDED;
+}
+body{
+    position: relative;
+    color: var(--forth-color);
+    background-color: var(--my-primary);
+}
+
+.bg-pr
+{
+    background-color: var(--my-primary);
+}
+.bg-sec
+{
+    background: var(--my-secondary);
+}
+
+/** Hero **/
+.hero{
+    position: relative;
+    color: var(--forth-color);
+    background: var(--my-secondary);
+    padding: 10em 0;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 5em;
+}
+/** Main **/
+.main{
+    margin: 2em 0;
+}
+/** Cards **/
+.card{
+    margin: 1em;
+    height: 19em;
+    background-color: var(--my-secondary);
+    color: var(--forth-color);
+}
+.card-body{
+    padding: 0;
+}
+
+.card img{
+   width: 100%;
+   margin: .8em 0 0 0;
+}
+
+.card-time{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin:0.5em;
+}
+.card-price{
+    position : absolute;
+    margin: 0.2em;
+    top: 0;
+    left: 0;
+    background: var(--third-color);
+    color: var(--forth-color);
+    border-radius: 10px;
+}
+
+.card-price .text-muted, p.card-time.text-muted{
+    color : var(--forth-color)!important
+}
+
+.card-title{
+    margin : 0.5em;
+    font-size: .9em;
+    overflow: auto;
+}
+
+.card-subtitle{
+    color: var(--third-color);
+    display: inline-block;
+    font-size: .9em;
+}
+
+.pad-rad{
+    padding: 0.3em;
+    border-radius: .1em;
+}
+
+.main{
+    position: relative;
+}
+
+/**
+Navigation
+*/
+
+.navbar-light{
+    background-color: var(--my-primary)!important;
+}
+
+.navigation-clean {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    color: var(--forth-color);
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+    .navigation-clean {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.navigation-clean .navbar-brand {
+    font-weight: bold;
+    color: inherit;
+}
+
+.navigation-clean .navbar-brand:hover {
+    color: var(--forth-color);
+}
+
+.navigation-clean .navbar-toggler {
+    border-color: #ddd;
+}
+
+.navigation-clean .navbar-toggler:hover, .navigation-clean .navbar-toggler:focus {
+    background: none;
+}
+
+.navigation-clean .navbar-toggler {
+    color: #888;
+}
+
+.navigation-clean.navbar-light .navbar-nav .nav-link.active, .navigation-clean.navbar-light .navbar-nav .nav-link.active:focus, .navigation-clean.navbar-light .navbar-nav .nav-link.active:hover {
+    color: var(--forth-color);
+    box-shadow: none;
+    background: none;
+    pointer-events: none;
+}
+
+.navigation-clean.navbar .navbar-nav .nav-link {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.navigation-clean.navbar-light .navbar-nav .nav-link {
+    color: var(--forth-color);
+}
+
+.navigation-clean.navbar-light .navbar-nav .nav-link:focus, .navigation-clean.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--third-color) !important;
+    background-color: transparent;
+}
+
+.navigation-clean .navbar-nav > li > .dropdown-menu {
+    margin-top: -5px;
+    box-shadow: none;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.navigation-clean .dropdown-menu .dropdown-item:focus, .navigation-clean .dropdown-menu .dropdown-item {
+    line-height: 2;
+    color: #37434d;
+}
+
+.navigation-clean .dropdown-menu .dropdown-item:focus, .navigation-clean .dropdown-menu .dropdown-item:hover {
+    background: #eee;
+    color: inherit;
+}
+
+
